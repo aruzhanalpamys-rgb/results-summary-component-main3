@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: hsl(221, 100%, 96%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      min-height: 100vh;
+    }
+    .container {
+      display: flex;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .left-div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      width: 300px;
+      height: 400px;
+      z-index: 2;
+      border-radius: 20px;
+    }
+    .right-div {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      width: 240px;
+      z-index: 1;
+      padding-left: 43px;
+      padding-right: 30px;
+      margin-left: -20px;
+      border-radius: 0px 20px 20px 0px;
+    }
+    .reaction,
+    .memory,
+    .verbal,
+    .visual {
+      display: flex;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      width: 240px;
+    }
+
+    .circle {
+      background: linear-gradient(
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+      );
+      padding: 45px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-bottom: 25px;
+    }
+    .reaction img,
+    .memory img,
+    .verbal img,
+    .visual img {
+      margin-left: 10px;
+    }
+    .reaction p {
+      margin-left: 10px;
+      margin-right: 70px;
+    }
+    .memory p {
+      margin-left: 10px;
+      margin-right: 74px;
+    }
+    .verbal p {
+      margin-left: 10px;
+      margin-right: 86px;
+    }
+    .visual p {
+      margin-left: 10px;
+      margin-right: 90px;
+    }
+
+    h1 {
+      margin: 0;
+      margin-bottom: -10px;
+      font-size: 45px;
+      color: white;
+    }
+    .circle p {
+      margin-top: 10px;
+      color: gray;
+      font-size: 14px;
+    }
+    h2 {
+      color: white;
+      font-weight: 500;
+      margin-top: 0px;
+      margin-bottom: 10px;
+    }
+    .info {
+      font-size: 15px;
+      color: rgb(165, 164, 164);
+      letter-spacing: 0.5px;
+      margin-bottom: 20px;
+      margin-top: 10px;
+    }
+    .left-div h3 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      color: rgb(165, 164, 164);
+      font-weight: 550;
+    }
+    .right-div h3 {
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-weight: 550;
+    }
+    .reaction {
+      background-color: hsl(0, 100%, 90%);
+      color: hsl(0, 100%, 67%);
+    }
+    .memory {
+      background-color: hsl(39, 100%, 90%);
+      color: hsl(39, 100%, 56%);
+    }
+    .verbal {
+      background-color: hsl(166, 100%, 90%);
+      color: hsl(166, 100%, 37%);
+    }
+    .visual {
+      background-color: hsl(234, 85%, 90%);
+      color: hsl(234, 85%, 45%);
+    }
+    button {
+      width: 240px;
+      padding: 15px;
+      border: none;
+      background-color: hsl(224, 30%, 27%);
+      border-radius: 20px;
+      color: white;
+      margin-top: 15px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="left-div">
+        <h3>Your Result</h3>
+        <div class="circle">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p class="info">
+          You scored higther than 65% of<br />the people who have taken<br />
+          these tests.
+        </p>
+      </div>
+      <div class="right-div">
+        <h3>Summary</h3>
+
+        <div class="reaction">
+          <img src="assets/images/icon-reaction.svg" />
+          <p>Reaction</p>
+          <p class="right">
+            <span style="color: black">80</span
+            ><span style="color: gray">/100</span>
+          </p>
+        </div>
+
+        <div class="memory">
+          <img src="assets/images/icon-memory.svg" />
+          <p>Memory</p>
+          <p class="right">
+            <span style="color: black">92</span
+            ><span style="color: gray">/100</span>
+          </p>
+        </div>
+
+        <div class="verbal">
+          <img src="assets/images/icon-verbal.svg" />
+          <p>Verbal</p>
+          <p class="right">
+            <span style="color: black">61</span
+            ><span style="color: gray">/100</span>
+          </p>
+        </div>
+
+        <div class="visual">
+          <img src="assets/images/icon-visual.svg" />
+          <p>Visual</p>
+          <p class="right">
+            <span style="color: black">73</span
+            ><span style="color: gray">/100</span>
+          </p>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
